@@ -34,6 +34,7 @@ To test Item Pickups, I've added the BPI_PickupItems interface and Pickup Item e
     __Hotbar options:__
     
     <img src="images/HotbarOptions.png">
+    
     - Keep the Hotbar array empty, it will be populated automatically during gameplay.
     - Total Items. How many Hotbar items to show (max: 10 items).
     - Move to Inventory when Full. Picked-up items will be added to the Inventory if Hotbar is full.
@@ -41,6 +42,7 @@ To test Item Pickups, I've added the BPI_PickupItems interface and Pickup Item e
     __Inventory options:__
 
     <img src="images/InventoryOptions.png">
+    
     - Keep the Inventory array empty, it will be populated automatically during gameplay.
     - Total Items. How many Inventory items to show?
 
@@ -55,7 +57,7 @@ To test Item Pickups, I've added the BPI_PickupItems interface and Pickup Item e
 4. Add BP_ItemPickup (InventorySystem/Collectables) to the level and set the item and quantity.
 
 ## Additional details:
-- Hotbar and Inventory are components attached to the Player controller for separation of responsibility. The main purpose is to create a more modular, flexible, and maintainable inventory system that can be easily extended and customized to fit your game's specific needs.
+- Hotbar and Inventory are components attached to the Player controller for separation of responsibilities. The main purpose is to create a more modular, flexible, and maintainable inventory system that can be easily extended and customized to fit your game's specific needs.
 - The system stores items as structures in a data table, which are essentially a table of data that can be accessed and manipulated in Blueprints. The DT_PickupItems contains information on each item in the inventory, such as its icon, model, stackability, and maximum stack size.
 - The drag-and-drop feature allows users to move items between the Hotbar and Inventory, as well as to and from the game world. When dragging an item, the system will show a preview of the item's icon to give the user feedback on what they're dragging.
 - For stackable items, the system will keep track of the quantity of each item in a stack and update the item's UI accordingly. If an item is picked up that would exceed the maximum stack size, the system will create a new stack for the remaining items.
