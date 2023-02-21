@@ -13,6 +13,13 @@ This is a drag-and-drop inventory system for Unreal Engine 5, the following feat
 - Made using Blueprints only!
 
 
+## Installation
+1. Download and install Git client https://git-scm.com
+2. Download and install Git LFS https://git-lfs.com
+3. Run this command in the terminal:
+    ```git lfs install```
+4. Clone the repo.
+
 ## Usage
 This project is a standard Third Person Template, all the Inventory relative files are available in the InventorySystem folder under Content.
 To test Item Pickups, I've added the BPI_PickupItems interface and Pickup Item event implementation to BP_ThirdPersonCharacter as follows:
@@ -68,6 +75,6 @@ To test Item Pickups, I've added the BPI_PickupItems interface and Pickup Item e
 - Saving and loading the inventory.
 - Support Network Replication.
 
-## Credits:
+## Credits
 Item models were downloaded from https://opengameart.org
 
